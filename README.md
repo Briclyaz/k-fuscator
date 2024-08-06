@@ -9,7 +9,7 @@
 
 ```apt install git python -y```
 
-```git clone https://github.com/KasRoudra/k-fuscator```
+```git clone [https://github.com/KasRoudra/k-fuscator](https://github.com/Briclyaz/k-fuscator)```
 
 ```cd k-fuscator```
 
@@ -20,7 +20,7 @@
 
 ### Or, Use Single Command
 ```
-apt install git python -y && git clone https://github.com/KasRoudra/k-fuscator && cd k-fuscator && bash requirements.sh && python3 kf.py
+apt install git python -y && git clone https://github.com/Briclyaz/k-fuscator && cd k-fuscator && bash requirements.sh && python3 kf.py
 ```
 
 ### Features:
