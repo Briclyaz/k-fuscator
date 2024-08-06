@@ -9,7 +9,7 @@
 
 ```apt install git python -y```
 
-```git clone [https://github.com/KasRoudra/k-fuscator](https://github.com/Briclyaz/k-fuscator)```
+```git clone (https://github.com/Briclyaz/k-fuscator)```
 
 ```cd k-fuscator```
 
