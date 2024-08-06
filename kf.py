@@ -221,7 +221,6 @@ def encryptem():
         encryptem()
     out_file= input(ask + "Output File  > " + green)
     with open(in_file) as in_f, open(out_file, "w", encoding="utf-8") as out_f:
-        out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/KasRoudra/k-fuscator\n\n")
         out_f.write(encode_string(in_f.read(), alphabet))
         sprint(f"{success}{out_file} saved in {pwd}")
         mover(out_file)
