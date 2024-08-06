@@ -154,7 +154,6 @@ def encryptsh():
     out_file= input(ask + "Output Filename  > " + green)   
     with open(".temp",'r') as temp_f, open(out_file,'w') as out_f:
         filedata = temp_f.read()
-        out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/KasRoudra/k-fuscator\n\n"+filedata)
     os.remove(".temp")
     sprint(f"{success}{out_file} saved in {pwd}")
     mover(out_file)
@@ -208,7 +207,6 @@ def encryptvar():
     with open(in_file, 'r', encoding='utf-8', errors='ignore') as in_f,open(out_file, 'w') as out_f:
        file_content = in_f.read()
        obfuscated_content = obfuscate(VARIABLE_NAME, file_content)
-       out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/KasRoudra/k-fuscator\n\n"+obfuscated_content)
     sprint(f"{success}{out_file} saved in {pwd}")
     mover(out_file)
 
