@@ -125,21 +125,21 @@ def encode_string(in_s, alphabet):
         )
     )
 
-# Encrypt Bash code by npm package "bash-obfuscate"
+# Encrypt Bash code by npm package "module-obfuscate"
 def encryptsh():
     in_file = input(ask + "Input Filename  > "+cyan)
     if not os.path.exists(in_file):
         sprint(error+'File not found')
         os.system("sleep 2")
         encryptsh()
-    os.system("bash-obfuscate " + in_file + " -o .temp")
+    os.system("module-obfuscate " + in_file + " -o .temp")
     if not os.path.exists(".temp"):
         try:
             sprint(info+"Installing Module-Obfuscate....\n")
             os.system("apt install nodejs -y && npm install -g module-obfuscate")
-            os.system("bash-obfuscate " + in_file + " -o .temp")
+            os.system("module-obfuscate " + in_file + " -o .temp")
         except:
-            sprint(error+" Bash-Obfuscate not installed! Install it by:\n"+green+"[+] \"apt install nodejs -y && npm install -g module-obfuscate\"")
+            sprint(error+" module-obfuscate not installed! Install it by:\n"+green+"[+] \"apt install nodejs -y && npm install -g module-obfuscate\"")
             exit(1)
     out_file= input(ask + "Output Filename  > " + green)   
     with open(".temp",'r') as temp_f, open(out_file,'w') as out_f:
