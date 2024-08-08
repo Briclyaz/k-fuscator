@@ -1,14 +1,3 @@
-# -*- coding: UTF-8 -*-
-
-# K-fuscator
-# Author  : KasRoudra
-# Github  : https://github.com/KasRoudra
-# Contact : https://m.me/KasRoudra
-# Language: Python(3)
-# Date    : 18-08-2021
-
-# Encrypt(obfuscate) or decrypt bash script or compile python script
-
 import os, base64, sys, time
 from pprint import pformat
 
@@ -55,7 +44,7 @@ logo=f'''
 {red}| ' /_____| |_ | | | / __|/ __/ _' | __/ _ \| '__|
 {blue}| . \_____|  _|| |_| \__ \ (_| (_| | || (_) | |
 {cyan}|_|\_\    |_|   \__,_|___/\___\__,_|\__\___/|_|
-{purple}                                 [By KasRoudra]
+{purple}                                 [Edited by Briclyaz]
 
 '''
 
@@ -70,7 +59,7 @@ def sprint(sentence, second=0.05):
 def about():
     os.system("clear")
     sprint(logo, 0.01)
-    print(f"{cyan}[ToolName]  {purple} :[K-fuscator]")
+    print(f"{cyan}[ToolName]  {purple} :[Obfuscator]")
     print(f"{cyan}[Version]   {purple} :[1.0]")
     print(f"{cyan}[Author]    {purple} :[KasRoudra]")
     print(f"{cyan}[Github]    {purple} :[https://github.com/KasRoudra]")
@@ -146,11 +135,11 @@ def encryptsh():
     os.system("bash-obfuscate " + in_file + " -o .temp")
     if not os.path.exists(".temp"):
         try:
-            sprint(info+"Installing Bash-Obfuscate....\n")
-            os.system("apt install nodejs -y && npm install -g bash-obfuscate")
+            sprint(info+"Installing Module-Obfuscate....\n")
+            os.system("apt install nodejs -y && npm install -g module-obfuscate")
             os.system("bash-obfuscate " + in_file + " -o .temp")
         except:
-            sprint(error+" Bash-Obfuscate not installed! Install it by:\n"+green+"[+] \"apt install nodejs -y && npm install -g bash-obfuscate\"")
+            sprint(error+" Bash-Obfuscate not installed! Install it by:\n"+green+"[+] \"apt install nodejs -y && npm install -g module-obfuscate\"")
             exit(1)
     out_file= input(ask + "Output Filename  > " + green)   
     with open(".temp",'r') as temp_f, open(out_file,'w') as out_f:
