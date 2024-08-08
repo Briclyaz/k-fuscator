@@ -76,6 +76,7 @@ def about():
     print(f"{cyan}[Github]    {purple} :[https://github.com/KasRoudra]")
     print(f"{cyan}[Messenger] {purple} :[https://m.me/KasRoudra]")
     print(f"{cyan}[Email]     {purple} :[kasroudrakrd@gmail.com]\n")
+    print(f"{cyan}[Edited version by]     {purple} :[Briclyaz@Telegram]\n")
     ret=input(ask+"1 for main menu, 0 for exit  > "+green)
     if ret=="1":
         main()
